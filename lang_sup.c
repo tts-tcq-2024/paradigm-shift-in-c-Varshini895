@@ -1,7 +1,7 @@
 #include "lang_sup.h"
 
 const char* messages[LANG_COUNT][3] = {
-    [LANG_ENGL] = {
+    [LANG_ENG] = {
         "Temperature out of range!",
         "State of Charge out of range!",
         "Charge Rate out of range!"
