@@ -8,7 +8,7 @@ int main() {
     assert(!batteryIsOk(50, 85, 0, LANG_ENG));
     assert(!batteryIsOk(30, 85, 0, LANG_ENG));
     assert(!batteryIsOk(25, 70, 0.9, LANG_ENG));
-
+  
     assert(batteryIsOk(25, 70, 0.7, LANG_GER));
     assert(!batteryIsOk(50, 85, 0, LANG_GER));
     assert(!batteryIsOk(30, 85, 0, LANG_GER));
