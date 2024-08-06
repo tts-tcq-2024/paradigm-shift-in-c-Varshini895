@@ -10,6 +10,8 @@
 
 int preferedLanguage=0;
 
+vois setPreferedLanguage(int newLanguage){ preferedLanguage=newLanguage;}
+
 int isTemperatureOk(float temperature) {
     if (temperature < MIN_TEMPERATURE || temperature > MAX_TEMPERATURE) {
         
@@ -34,7 +36,7 @@ int isChargeRateOk(float chargeRate, int lang) {
     return 1; // Okay
 }
 
-int batteryIsOk(float temperature, float soc, float chargeRate, int lang) {
+int batteryIsOk(float temperature, float soc, float chargeRate) {
     int tempOk=isTemperatureOk(temperature);
     int socOk=isSocOk(soc);
     int chargeRateOk=isChargeRateOk(chargeRate);
@@ -44,7 +46,7 @@ int batteryIsOk(float temperature, float soc, float chargeRate, int lang) {
     printErrorMessage(getErrorMessage(chargeRateOk,lang,1));
     return  tempOk&&
            socOk &&
-           chargeRateOk(chargeRate, lang);
+           chargeRateOk
 }
 char* getErrorMessage(int status, int lang,int parameterIndex){
 return getLangaugaeSpecificMessage(lang,parameterIndex);
