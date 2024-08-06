@@ -6,8 +6,7 @@
 typedef enum {
     LANG_ENG, 
     LANG_GER,
-    // Add more languages here
-    LANG_COUNT // This should always be the last item
+    LANG_COUNT 
 } Language;
 
 // Function prototypes
