@@ -10,6 +10,7 @@ typedef enum {
 } Language;
 
 // Function prototypes
+void setPreferedLanguage(int newLanguage);
 const char* getTemperatureOutOfRangeMessage(Language lang);
 const char* getSocOutOfRangeMessage(Language lang);
 const char* getChargeRateOutOfRangeMessage(Language lang);
